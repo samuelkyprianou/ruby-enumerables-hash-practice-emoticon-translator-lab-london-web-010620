@@ -22,7 +22,7 @@ end
 
 def get_english_meaning(path, emoticon)
 library = load_library(path)
-if library[:get_emoticon].has_value?(emoticon)
-  library[:get_emoticon].key(emoticon)
+if library[:get_meaning].has_value?(emoticon)
+  library[:get_meaning].key(emoticon)
 end
 end
